@@ -28,7 +28,7 @@ obj/
 # Archivos de prueba temporales
 test
 
-# Directorios de ejercicios (solo queremos prac4/)
+# Directorios de ejercicios (solo queremos apunte/)
 list1/
 list2/
 list3/
@@ -37,6 +37,7 @@ list5/
 prac/
 prac2/
 prac3/
+prac4/
 t1/
 t23/
 .vscode/
