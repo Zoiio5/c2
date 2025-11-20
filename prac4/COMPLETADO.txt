@@ -1,0 +1,48 @@
+✓ DOCUMENTACIÓN DE COMPLEJIDADES COMPLETADA
+
+Archivos actualizados con COMPLEJIDAD TEMPORAL y COMPLEJIDAD ESPACIAL:
+
+ORDENAMIENTO:
+✓ selectionsort.cpp - O(n²) temporal, O(1) espacial
+✓ insertionsort.cpp - O(n)~O(n²) temporal, O(1) espacial  
+✓ bubblesort.cpp - O(n)~O(n²) temporal, O(1) espacial
+✓ quicksort.cpp - O(n log n) temporal, O(log n) espacial
+✓ countinversions.cpp - O(n log n) temporal, O(n) espacial
+
+SELECCIÓN:
+✓ rselect.cpp - O(n) promedio temporal, O(log n) espacial
+✓ dselect.cpp - O(n) garantizado temporal, O(log n) espacial
+
+GRAFOS:
+✓ dfs.cpp - O(V+E) temporal, O(V) espacial
+✓ toposort.cpp - O(V+E) temporal, O(V) espacial
+✓ scc.cpp - O(V+E) temporal, O(V+E) espacial
+✓ prim.cpp - O(E log V) temporal, O(V+E) espacial
+✓ Kruskal.cpp - O(E log E) temporal, O(V+E) espacial
+✓ djtra.cpp - O((V+E) log V) temporal, O(V+E) espacial
+✓ bellmanford.cpp - O(V·E) temporal, O(V) espacial
+✓ aestrella.cpp - O(b^d) temporal, O(V) espacial
+
+PROGRAMACIÓN DINÁMICA:
+✓ kanpsack.cpp - O(n·W) temporal, O(n·W) espacial
+✓ unboundedknapsack.cpp - O(n·W) temporal, O(W) espacial
+✓ mwistmax.cpp - O(V) temporal, O(V) espacial
+✓ alisecu.cpp - O(n·m) temporal, O(n·m) espacial
+✓ gdp.cpp - O(a·b) temporal, O(a·b) espacial
+
+GREEDY:
+✓ fractionalknapsack.cpp - O(n log n) temporal, O(n) espacial
+✓ huffman.cpp - O(n + k log k) temporal, O(k) espacial
+✓ gg.cpp - O(n log n) temporal, O(n) espacial
+
+BACKTRACKING:
+✓ tsp.cpp - O(n!) temporal, O(n) espacial
+✓ gb.cpp (N-Queens) - O(N!) temporal, O(N) espacial
+✓ subsets.cpp - O(n·2ⁿ) temporal, O(n·2ⁿ) espacial
+✓ permutations.cpp - O(n·n!) temporal, O(n·n!) espacial
+✓ combinations.cpp - O(C(n,k)·k) temporal, O(C(n,k)·k) espacial
+
+OTROS:
+✓ scheduling.cpp - O(n log n)~O(n·T) temporal, O(n) espacial
+
+Total: 29 algoritmos documentados

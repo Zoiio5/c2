@@ -1,0 +1,43 @@
+# Ejecutables
+*.out
+a.out
+*.exe
+
+# Archivos temporales C++
+*.o
+*.obj
+
+# LaTeX temporales
+*.aux
+*.log
+*.toc
+*.pdf~
+
+# Zone.Identifier (WSL)
+*.Zone.Identifier
+
+# Temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas de build
+build/
+bin/
+obj/
+
+# Archivos de prueba temporales
+test
+
+# Directorios de ejercicios (solo queremos prac4/)
+list1/
+list2/
+list3/
+list4/
+list5/
+prac/
+prac2/
+prac3/
+t1/
+t23/
+.vscode/
+analisis_lists.md

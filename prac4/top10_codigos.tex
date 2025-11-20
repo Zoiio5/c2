@@ -1,0 +1,444 @@
+\documentclass[a4paper,landscape,6pt]{extarticle}
+\usepackage[margin=0.4cm]{geometry}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newunicodechar}
+\usepackage{textcomp}
+
+% Definir caracteres unicode problemáticos
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{⁰}{\textsuperscript{0}}
+\newunicodechar{¹}{\textsuperscript{1}}
+\newunicodechar{²}{\textsuperscript{2}}
+\newunicodechar{³}{\textsuperscript{3}}
+\newunicodechar{⁴}{\textsuperscript{4}}
+\newunicodechar{⁵}{\textsuperscript{5}}
+\newunicodechar{⁶}{\textsuperscript{6}}
+\newunicodechar{⁷}{\textsuperscript{7}}
+\newunicodechar{⁸}{\textsuperscript{8}}
+\newunicodechar{⁹}{\textsuperscript{9}}
+
+% Configuración de listings ultra compacta
+\lstset{
+    language=C++,
+    basicstyle=\ttfamily\tiny,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{red},
+    numbers=none,
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=2,
+    showstringspaces=false,
+    frame=none,
+    aboveskip=1pt,
+    belowskip=1pt,
+    xleftmargin=1pt,
+    xrightmargin=1pt,
+    columns=flexible,
+    keepspaces=true,
+    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+             {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+             {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {ü}{{\"u}}1 {Ü}{{\"U}}1
+             {¿}{{?`}}1 {¡}{{!`}}1
+}
+
+\setlength{\columnsep}{0.2cm}
+\setlength{\columnseprule}{0.1pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\tiny TODOS LOS ALGORITMOS - PROGRAMACIÓN COMPETITIVA (39 códigos)}
+\fancyhead[R]{\tiny prac4/ - \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+% ==================== PÁGINA 1 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 1. A* SEARCH}
+\lstinputlisting[language=C++]{aestrella.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 2. ALICE SEQUENCE}
+\lstinputlisting[language=C++]{alisecu.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 3. BELLMAN-FORD}
+\lstinputlisting[language=C++]{bellmanford.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 2 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 4. BINARY SEARCH}
+\lstinputlisting[language=C++]{binarysearch.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 5. BUBBLE SORT}
+\lstinputlisting[language=C++]{bubblesort.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 6. COMBINATIONS}
+\lstinputlisting[language=C++]{combinations.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 3 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 7. COUNT INVERSIONS}
+\lstinputlisting[language=C++]{countinversions.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 8. DFS}
+\lstinputlisting[language=C++]{dfs.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 9. DFS + BFS}
+\lstinputlisting[language=C++]{dfsbfs.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 4 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 10. DIJKSTRA}
+\lstinputlisting[language=C++]{djtra.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 11. DETERMINISTIC SELECT}
+\lstinputlisting[language=C++]{dselect.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 12. FRACTIONAL KNAPSACK}
+\lstinputlisting[language=C++]{fractionalknapsack.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 5 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 13. GREEDY BASICS}
+\lstinputlisting[language=C++]{gb.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 14. GREEDY DP}
+\lstinputlisting[language=C++]{gdp.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 15. GREEDY GREEDY}
+\lstinputlisting[language=C++]{gg.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 6 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 16. HUFFMAN}
+\lstinputlisting[language=C++]{huffman.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 17. INSERTION SORT}
+\lstinputlisting[language=C++]{insertionsort.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 18. KNAPSACK}
+\lstinputlisting[language=C++]{kanpsack.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 7 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 19. KNAPSACK 0/1}
+\lstinputlisting[language=C++]{knapsack01.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 20. KRUSKAL (MST)}
+\lstinputlisting[language=C++]{Kruskal.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 21. LIS}
+\lstinputlisting[language=C++]{lis.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 8 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 22. MODULAR POW}
+\lstinputlisting[language=C++]{modpow.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 23. MWIST MAX}
+\lstinputlisting[language=C++]{mwistmax.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 24. PERMUTATIONS}
+\lstinputlisting[language=C++]{permutations.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 9 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 25. PREFIX SUM}
+\lstinputlisting[language=C++]{prefixsum.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 26. PRIM (MST)}
+\lstinputlisting[language=C++]{prim.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 27. QUICKSORT}
+\lstinputlisting[language=C++]{quicksort.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 10 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 28. RANDOMIZED SELECT}
+\lstinputlisting[language=C++]{rselect.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 29. SCC (Kosaraju)}
+\lstinputlisting[language=C++]{scc.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 30. SCHEDULING}
+\lstinputlisting[language=C++]{scheduling.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 11 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 31. SELECTION SORT}
+\lstinputlisting[language=C++]{selectionsort.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 32. SIEVE}
+\lstinputlisting[language=C++]{sieve.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 33. SUBSETS}
+\lstinputlisting[language=C++]{subsets.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 12 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 34. TOPOLOGICAL SORT}
+\lstinputlisting[language=C++]{toposort.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 35. TSP}
+\lstinputlisting[language=C++]{tsp.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 36. TWO POINTERS}
+\lstinputlisting[language=C++]{twopointers.cpp}
+
+\end{multicols}
+
+\newpage
+
+% ==================== PÁGINA 13 ====================
+\begin{multicols}{3}
+\raggedcolumns
+
+\section*{\scriptsize 37. UNBOUNDED KNAPSACK}
+\lstinputlisting[language=C++]{unboundedknapsack.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 38. UNION-FIND}
+\lstinputlisting[language=C++]{unionfind.cpp}
+\vfill\columnbreak
+
+\section*{\scriptsize 39. INPUT PARSING}
+\lstinputlisting[language=C++]{input_parsing.cpp}
+
+\end{multicols}
+
+
+\newpage
+
+% ==================== RESUMEN ====================
+\section*{\normalsize ÍNDICE DE ALGORITMOS}
+
+\begin{multicols}{3}
+\tiny
+
+\textbf{GRAFOS:}
+\begin{itemize}
+\item[4.] Binary Search
+\item[8.] DFS
+\item[9.] DFS+BFS
+\item[10.] Dijkstra
+\item[20.] Kruskal MST
+\item[26.] Prim MST
+\item[29.] SCC Kosaraju
+\item[34.] Topological Sort
+\item[35.] TSP
+\item[3.] Bellman-Ford
+\item[1.] A* Search
+\end{itemize}
+
+\textbf{DP:}
+\begin{itemize}
+\item[19.] Knapsack 0/1
+\item[18.] Knapsack
+\item[12.] Fractional Knapsack
+\item[37.] Unbounded Knapsack
+\item[21.] LIS
+\item[7.] Count Inversions
+\item[23.] MWIST Max
+\end{itemize}
+
+\columnbreak
+
+\textbf{GREEDY:}
+\begin{itemize}
+\item[13.] Greedy Basics
+\item[14.] Greedy DP
+\item[15.] Greedy Greedy
+\item[16.] Huffman
+\item[30.] Scheduling
+\end{itemize}
+
+\textbf{SORTING/SELECT:}
+\begin{itemize}
+\item[5.] Bubble Sort
+\item[17.] Insertion Sort
+\item[27.] Quicksort
+\item[31.] Selection Sort
+\item[11.] Deterministic Select
+\item[28.] Randomized Select
+\end{itemize}
+
+\textbf{BÚSQUEDA/RANGO:}
+\begin{itemize}
+\item[4.] Binary Search
+\item[25.] Prefix Sum
+\item[36.] Two Pointers
+\end{itemize}
+
+\columnbreak
+
+\textbf{MATEMÁTICA:}
+\begin{itemize}
+\item[22.] Modular Pow
+\item[32.] Sieve
+\end{itemize}
+
+\textbf{COMBINATORIA:}
+\begin{itemize}
+\item[6.] Combinations
+\item[24.] Permutations
+\item[33.] Subsets
+\end{itemize}
+
+\textbf{ESTRUCTURAS:}
+\begin{itemize}
+\item[38.] Union-Find
+\end{itemize}
+
+\textbf{OTROS:}
+\begin{itemize}
+\item[2.] Alice Sequence
+\item[39.] Input Parsing (10 tecnicas)
+\end{itemize}
+
+\end{multicols}
+
+\vspace{0.2cm}
+
+\begin{multicols}{2}
+\tiny
+
+\subsection*{Complejidades por Límites}
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{n $\leq$ 10} & O(n!) Backtracking, Permutations \\
+\textbf{n $\leq$ 20} & O(2\^{}n) Subsets, Bitmask DP \\
+\textbf{n $\leq$ 500} & O(n\^{}3) Floyd-Warshall \\
+\textbf{n $\leq$ 5000} & O(n\^{}2) DP cuadratico \\
+\textbf{n $\leq$ 10\^{}5} & O(n log n) Sort, Dijkstra, Binary Search \\
+\textbf{n $\leq$ 10\^{}6} & O(n) Two Pointers, Prefix Sum, DFS \\
+\textbf{n $\leq$ 10\^{}9} & O(log n) Binary Search, Mod Pow, GCD \\
+\hline
+\end{tabular}
+
+\columnbreak
+
+\subsection*{Template Base}
+
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+using pii = pair<int,int>;
+using vi = vector<int>;
+#define pb push_back
+#define all(x) (x).begin(), (x).end()
+#define sz(x) (int)(x).size()
+const int MOD = 1e9 + 7;
+void solve() { }
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int t = 1; // cin >> t;
+    while(t--) solve();
+    return 0;
+}
+\end{lstlisting}
+
+\end{multicols}
+
+\end{document}
